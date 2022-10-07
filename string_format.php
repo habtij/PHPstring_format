@@ -50,18 +50,7 @@ function remove_fword($string) {
     <head>
         <meta charset="utf-8" />
         <title>String Format</title>
-        <link rel="stylesheet" href="css/bootstrap.css" />
-        <script src="jquery/jquery-3.5.1.min.js"></script>
-        <script>
-            //$(init);
-            //function init() {
-            //    $("#entry_value").bind('input',function(){
-            //        if ($(this).val() == 'fuck') {
-            //            $(this).val("****");
-            //        }
-            //    });
-            //}
-        </script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     </head>
     <body>
         <div class="container mt-5">
@@ -70,8 +59,8 @@ function remove_fword($string) {
             <?php echo $entry; ?>
             </p>
             <form class="form" method="POST" action="<?php echo $self; ?>">
-                <div class="form-group row">
-                    <label class="col-form-label">Enter Text</label>
+                <div class="form-group row mb-2">
+                    <label class="col-form-label">Enter Text:</label>
                     <textarea class="form-control" id="entry_value" name='entry' cols="20" rows="7" required='required'></textarea>
                 </div>
                 <div class='form-group text-center'>
