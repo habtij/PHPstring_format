@@ -11,7 +11,7 @@ if (isset($_POST['save_entry'])) {
 
 function remove_fword($string) {
     $fword_arr = ['fuck', 'fucked', 'fuck3d', 'fucker', '4ck', '4rk', 'fucking', 'fack', 'fnck', 'fncking', 'shit', 'damn', 'motherfucker', 'motherfuck3r', 'damnit', 'damit', 'dammit'];
-    $fstring_arr = [2 => '**', 3 => '***', 4 => '****', 5 => '*****', 6 => '******', 7 => '*******', 8 => '********', 9 => '*********', 10 => '**********', 11 => '***********', 12 => '************'];
+    $length_arr = [2 => '**', 3 => '***', 4 => '****', 5 => '*****', 6 => '******', 7 => '*******', 8 => '********', 9 => '*********', 10 => '**********', 11 => '***********', 12 => '************'];
     
     $new_array = [];
     $entry_array = explode(' ',$string);
@@ -28,7 +28,7 @@ function remove_fword($string) {
                         }
                     }
                 } else {
-                    $word = $fstring_arr[strlen($word)];
+                    $word = $length_arr[strlen($word)];
                     // Removing duplicate f word
                     for ($i = 0; $i < count($new_array) - count($new_array) * 2; $i++) {
                         if ($new_array[$i] == $word) {
