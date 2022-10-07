@@ -19,3 +19,7 @@ $fword_arr = ['fuck', 'fucked', 'fuck3d', 'fucker', '4ck', '4rk', 'fucking', 'fa
 
 # Longest length of fword supported
 Longest length = 12
+
+Note: It can always be modify by adding a "key => value" of the length to the $length_arr,
+where key = 'length in digit' e.g key = 20,
+value = 'asterisk equivalent to number of key' e.g value = ********************
